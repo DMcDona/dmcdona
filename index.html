@@ -891,9 +891,12 @@ ul.feeds-cont li a {
 
 <!-- Start custom script -->
 <script>
-    $('#siteSearch').find('input').removeAttr('required');
-    let tempString = ('#siteSearch').find('input');
-    console.log(tempString);
+    $( document ).on( "wb-ready.wb", function( event ) {
+        $('#siteSearch').find('input').removeAttr('required');
+        let tempString = ('#siteSearch').find('input');
+        console.log(tempString);
+});
+    
 </script>
 <!-- End custom script -->
 
