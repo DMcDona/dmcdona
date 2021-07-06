@@ -344,7 +344,7 @@ ul.feeds-cont li a {
           <div class="wb-frmvld">
             <form method="get" id="siteSearch">
              
-                <div class="wb-fieldflow col-sm-6" data-wb-fieldflow='{"noForm": true}' onload="$('#siteSearch').find('input').removeAttr('required');">
+                <div class="wb-fieldflow col-sm-6" data-wb-fieldflow='{"noForm": true}'>
           <p>Find a park or site</p>
           <ul>
             <li>Alberta
@@ -888,6 +888,13 @@ ul.feeds-cont li a {
 </div>
 
 <!-- End institutional template --> 
+
+<!-- Start custom script -->
+<script>
+    $('#siteSearch').find('input').removeAttr('required');
+</script>
+<!-- End custom script -->
+
 <!--Start CDTS serverBottom-en -->
 <footer id="wb-info">
   <div class="landscape">
