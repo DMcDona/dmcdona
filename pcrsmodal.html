@@ -240,7 +240,21 @@ color: #fff !important;
     padding: 5px;
     color: #FFF;
 }
-
+header#header {
+    height: 101px;
+    border-bottom: none;
+}
+.logo {
+	margin-left: 0px;
+	margin-top: 1px;
+	margin-right: 10px;
+}.all_data_right {
+	float: right;
+	line-height: 18px;
+}.all_data_right .header-right {
+	margin: 0 0px 0 0;
+	display: inline-block;
+}
 </style>
 
     <!-- End US eDirect styles -->
@@ -253,7 +267,129 @@ color: #fff !important;
         <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
         <li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to "About this site"</a></li>
     </ul>
-    <header>
+
+    <!-- Start US eDirect header -->
+    <header id="header" class="main_header" role="banner">
+        <div id="divNormalMenu" class="header-wrapper">
+            <a href="#main" class="skiptomaincontent">Skip to main content</a>
+            <div class="container">
+                <div class="logo pull-left">
+                    <a href="https://uatparkscanada.usedirect.com/Saturn/Default.aspx">
+
+                        
+                        <img src="https://uatparkscanada.usedirect.com/Saturn/themes/ParksCanada/A_logo.png" alt="Parks Canada">
+                    </a>
+                    
+                </div>
+
+                
+                <div class="all_data_right">
+                    <div id="divheader" class="header-right">
+                        <!-- ======================= NEW ======================= -->
+                        <div class="main_menu_top">
+                            <nav class="navbar  navbar-expand-md ">
+                                <button class="navbar-toggler" aria-label="Hamburger Menu" type="button" data-toggle="collapse" data-target="#navbar-collapse">☰</button>
+                                <div class="collapse navbar-collapse" id="navbar-collapse">
+                                    <ul class="nav navbar-nav ml-auto">
+                                        <li><a rel="Home" id="menu_1" href="https://uatparkscanada.usedirect.com/Saturn/Default.aspx" aria-label="Home" class="h_right_menu_toggel">Home</a><span>|</span></li><li><a rel="Camping and Lodging" id="menu_2" href="https://uatparkscanada.usedirect.com/Saturn/Facilities/SearchViewUnitAvailabity.aspx" aria-label="Camping and Parks Canada Accommodations" class="h_right_menu_toggel">Camping and Parks Canada Accommodations</a><span>|</span></li><li><a rel="Activities" id="menu_31" href="https://uatparkscanada.usedirect.com/Saturn/Activities/Default.aspx" aria-label="Activities" class="h_right_menu_toggel">Activities</a><span>|</span></li>
+                                        
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- ======================= OLd ======================= -->
+
+                        <div class="main_menu_top" style="display: none;">
+                            <div class="navbar navbar-default" role="navigation">
+                                <!-- ============ -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" title="click to open menu">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <!-- ============ -->
+                                <div class="collapse navbar-collapse" id="navbar_menu">
+
+                                    <ul class="nav navbar-nav" style="display: block;">
+                                        
+                                        <li style="display: none;">
+                                            <a href="javascript:void(0);" class="h_right_menu_toggel">Search</a>
+                                            <div id="divListSearchOnly" class="header-right-menu-modal dropdown-menu animated fadeInUp">
+
+                                                <div class="col-md-6 form-group">
+                                                    <label for="autpser" style="display: none;">autpser</label>
+                                                    <input type="text" class="form-control search-box glyphicon glyphicon-search" placeholder="Looking For" id="autpser">
+                                                    <input type="hidden" id="inpLookingFor">
+
+                                                </div>
+                                                <div class="col-md-2 form-group">
+                                                    <a href="#" onclick="return false;" class="btn btn-primary pull-left" id="btnGoogleGo">Go</a>
+                                                </div>
+                                                <div class="col-md-2 form-group">
+                                                    <a href="#" class="btn btn-primary pull-left" id="btnClearGoogleData" onclick="javascript:clearAllGoogleData();">Clear</a>
+                                                </div>
+
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </li>
+
+                                        
+
+                                        
+                                    </ul>
+
+
+                                </div>
+                                <!-- ============ -->
+                            </div>
+                        </div>
+                        <!-- ======================= OLd ======================= -->
+
+                    </div>
+                    
+                    
+                    <div class="open_header_box_mobile">
+                        <div class="header-shopping-cart">
+                            <ul>
+                            <!-- ==================== -->
+                            
+
+                            <li><a href="#" data-toggle="modal" class="btn btn-primary" id="aLogin" role="button"><span style="display: block;">LOGIN</span></a></li>
+                            <li><a href="https://uatparkscanada.usedirect.com/Saturn/Customers/NewCustomer.aspx" id="divCreateNewAccount" class="btn btn-primary createcustomer"><span style="display: block;">CREATE ACCOUNT</span></a></li>
+                            
+                            <!-- ==================== -->
+
+                            
+                            
+                            <li><a id="linkhypshopping2" aria-label="Go to shopping cart page" data-toggle="tooltip" data-placement="bottom" class="cart_icon_top_blue" onclick="return OpenLoginBox(iscustomernull,true,baseurlmain+'/Customers/ShoppingCart.aspx','');" title="" href="javascript:__doPostBack('ctl00$ctl00$linkhypshopping2','')" data-original-title="Go to shopping cart page">
+                                <span style="display: none;">Cart icon</span> <i class="fa fa-shopping-cart"></i>
+                                
+                            </a></li>
+                                </ul>
+                            
+                        </div>
+                        <div id="divcustname" class="header-user-name">
+                            
+                            
+                            
+                            
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+
+        </div>
+    </header>
+    <!-- End US eDirect header -->
+
+    <!-- Start GCWeb header -->
+    <!-- <header>
         <div id="wb-bnr" class="container">
             <div class="row">
                 <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization"> <a href="https://www.canada.ca/en.html" property="url"><img src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_32/assets/sig-blk-en.svg" alt="" property="logo" /> <span class="wb-inv" property="name"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a>
@@ -263,10 +399,14 @@ color: #fff !important;
                 <section id="wb-srch" class="col-lg-8 text-right">
                     <h2>Search</h2>
                     <form action="https://www.canada.ca/en/sr.html" method="get" name="cse-search-box" role="search" class="form-inline">
-                        <div class="form-group"> <label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input name="cdn" value="canada" type="hidden"> <input name="st" value="s" type="hidden"> <input name="num" value="10" type="hidden"> <input name="langs" value="en" type="hidden"> <input name="st1rt" value="1" type="hidden"> <input name="s5bm3ts21rch" value="x" type="hidden"> <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca"> <input type="hidden" name="_charset_" value="UTF-8"> <datalist id="wb-srch-q-ac">
+                        <div class="form-group"> <label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input name="cdn" value="canada" type="hidden"> <input name="st" value="s" type="hidden"> <input name="num" value="10" type="hidden"> <input name="langs" value="en" type="hidden"> <input name="st1rt" value="1" type="hidden"> <input name="s5bm3ts21rch" value="x" type="hidden"> <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca"> <input type="hidden" name="_charset_" value="UTF-8"> <datalist id="wb-srch-q-ac"> -->
+
+
                                 <!--[if lte IE 9]><select><![endif]-->
                                 <!--[if lte IE 9]></select><![endif]-->
-                            </datalist> </div>
+
+
+                            <!-- </datalist> </div>
                         <div class="form-group submit"> <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button> </div>
                     </form>
                 </section>
@@ -304,7 +444,8 @@ color: #fff !important;
                 </div>
             </div>
         </nav>
-    </header> <!-- End CDTS top-en -->
+    </header> -->
+     <!-- End CDTS top-en -->
     <!-- ----------------------------- -->
     <!-- ----------------------------- -->
     <!-- Start main page content       -->
