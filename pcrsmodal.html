@@ -325,7 +325,7 @@
             <div class="col-md-5 col-sm-5 mrgn-bttm-md text-center col-sm-offset-1" style="transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s; box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; background-color: rgb(255, 255, 255);" onmouseover="this.style.cssText='transition: all 0.5s cubic-bezier(.25,.8,.25,1);box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); background-color: #fff;';" onmouseout="this.style.cssText='transition: all 0.5s cubic-bezier(.25,.8,.25,1);box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); background-color: #fff;';">
                 <h2><a href="#">Backcountry campgrounds</a></h2> <a href="#"> <img src="https://user-images.githubusercontent.com/45856706/133454461-976435b3-dfdf-479a-b3f2-fe5812a707d6.jpg" alt="" class="img-responsive mrgn-bttm-sm"> </a>
                 <p><a class="wb-lbx lbx-modal" href="#backcountry_modal">What is backcountry camping?</a></p>
-            
+
 
                 <section id="backcountry_modal" class="mfp-hide modal-dialog modal-content overlay-def">
                     <header class="modal-header">
@@ -394,8 +394,54 @@
     </main> <!-- End main page content         -->
     <!-- Start custom script -->
     <script>        $(document).ready(function () { $("#siteSearch").find("input").removeAttr("required"); let tempString = ("#siteSearch").find("input"); console.log(tempString); });</script> <!-- End custom script -->
+    <!-- Start US eDirect footer -->
+    <footer id="MainFooter" role="contentinfo" style="border-top: 4px solid #FFF;  background: #2B4635;    font-size: 0.9em;  padding: 30px 0 0;  position: relative;  clear: both;  margin-top: 50px;  text-align: center;">
+        <div>
+            <div class="container">
+                <div class="">
+                    <div class="" style="text-align: center;">
+                        <img alt="Parks Canada Logo" class="footer_img_new" title="Parks Canada" src="https://uatparkscanada.usedirect.com/saturn/themes/parkscanada/footerlogo.png">
+                        <!--  <img class="fot-arow" title="down arrow" src="https://uatparkscanada.usedirect.com/saturn/themes/parkscanada/logo.jpg" alt="aerrow" />    -->
+                        <div class="bot-links pagelinks" style="display: block; padding-top: 20px; font-size: 15px; color: #3c6273; color: #fff !important;">
+                            <a href="https://uatparkscanada.usedirect.com/Saturn/Default.aspx">Home </a> |
+                            <a href="https://uatparkscanada.usedirect.com/Saturn/Facilities/SearchViewUnitAvailabity.aspx" id="SearchViewLink" onclick="switchchange();">Camping and Parks Canada Accommodations</a>
+                            <!--  <a href="Activities/ProgramsAndTours.aspx">ACTIVITIES </a> | -->
+                            <!--<a href="Giftcards/Giftcardsale.aspx">GIFT CARDS</a> -->
+                            <!--      <a href="Giftcards/Giftcardsale.aspx">GIFT CARDS</a> -->
+
+
+                        </div>
+                        <div class="bot-links" style="display: block; padding-top: 20px; font-size: 15px; color: #3c6273; color: #fff !important;">
+                            <!-- <a onclick="javascript:var rules=window.open('', 'rules','width=600, height=400, scrollbars=1, resizable=1'); return false;" target="_blank"  href="javascript:void(0);">-->
+                            <a href="https://reservation.pc.gc.ca/ResPolicies.aspx" target="_blank"> <strong>Park Rules </strong> </a> |
+                            <a href="https://uatparkscanada.usedirect.com/Saturn/ContactUs.aspx"> <strong>Contact Us </strong> </a> |
+                            <a href="https://reservation.pc.gc.ca/PrivacyPolicies.aspx" target="_blank"> <strong>Privacy Policy </strong> </a>|
+                            <a href="https://parkscanada.gc.ca" target="_blank"> <strong>Parks Canada Agency </strong> </a>
+                        </div>
+                        <br>
+                        <div class="">
+                            <span id="Label1" style="color: white; font-size: 12px;">Contact Us: <a href="tel:1-877-737-3783" style="color:#fff" aria-label="Customer service phone number">1-877-737-3783</a>, 8 am to 6 pm Pacific Time (PT) </span>
+                        </div>
+                        <div>
+                            <div class="copyrights">Copyright © 2021&nbsp; Parks Canada</div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="includeFooter">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color:white;padding:52px;width:100%;float:left;">
+            <div class="footer_right_img"><img src="https://uatparkscanada.usedirect.com/saturn/themes/parkscanada/logo.png" alt="Parks Canada Logo" style="float:right">
+            </div>
+        </div>
+    </footer>
+    <!-- End US eDirect footer -->
     <!--Start CDTS serverBottom-en -->
-    <footer id="wb-info">
+    <!-- <footer id="wb-info">
         <div class="landscape">
             <nav class="container wb-navcurr">
                 <h2 class="wb-inv">About government</h2>
@@ -433,7 +479,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!--End CDTS serverBottom-en -->
     <!-- Start Treasury board Script footer -->
     <script src="https://www.canada.ca/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
