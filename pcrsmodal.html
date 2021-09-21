@@ -244,88 +244,137 @@
         }
 
         header#header {
-            height: 101px;
-            border-bottom: none;
-        }
+    height: 101px;
+    border-bottom: none;
+}
 
-        .logo {
-            margin-left: 0px;
-            margin-top: 1px;
-            margin-right: 10px;
-        }
+#header > .container {
+    width: 100%;
+}
 
-        .all_data_right {
-            float: right;
-            line-height: 18px;
-        }
+#divNormalMenu > .container {
+    width: 100%;
+    max-width:100%;
+}
 
-        .all_data_right .header-right {
-            margin: 0 0px 0 0;
-            display: inline-block;
-        }
+.logo {
+    margin-left: 0px;
+    margin-top: 1px;
+    margin-right: 10px;
+}
 
-        .open_header_box_mobile {
-            display: inline-block;
-        }
+    .logo img {
+        max-width: 100%;
+    }
 
-        .header-shopping-cart {
-            display: inline-block;
-        }
+.all_data_right {
+    float: right;
+    line-height: 18px;
+}
 
-        .main_menu_top {
-            margin: 4px 0 0 0;
-        }
+.all_data_right_guest {
+    margin-top: 15px;
+}
 
-        .main_menu_top .navbar {
-            min-height: inherit;
-            margin-bottom: 0px;
-        }
+.all_data_right .header-right {
+    margin: 0 0px 0 0;
+    display: inline-block;
+}
 
-        .navbar-expand-md {
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-            -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-            -webkit-box-pack: start;
-            -ms-flex-pack: start;
-            justify-content: flex-start;
-        }
+.main_menu_top .navbar-default {
+    background: none;
+    border: none;
+}
 
-        .navbar {
-            position: relative;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
-            padding: 0.5rem 1rem;
-        }
+.main_menu_top .navbar {
+    min-height: inherit;
+    margin-bottom: 0px;
+}
 
-        .navbar-expand-md .navbar-collapse {
-            display: -webkit-box !important;
-            display: -ms-flexbox !important;
-            display: flex !important;
-            -ms-flex-preferred-size: auto;
-            flex-basis: auto;
-        }
+.main_menu_top .navbar-nav {
+    display: block;
+    float: none;
+    margin: 0;
+}
 
-        .main_menu_top .navbar-nav {
-            display: block;
-            float: none;
-            margin: 0;
-        }
+.main_menu_top .nav > li {
+    display: inline-block;
+    float: none;
+    margin: 0px 0;
+}
 
-        .main_menu_top .nav>li {
-            display: inline-block;
-            float: none;
-            margin: 0px 0;
-        }
+.main_menu_top {
+    margin: 4px 0 0 0;
+}
+
+    .main_menu_top .nav > li > a, .main_menu_top a.nav-link
+     {
+        display: inherit;
+        font-weight: 600;
+        padding: 25px 4px;
+        font-size: 15px;
+        /*text-transform: uppercase; */
+        font-family: "Open Sans", Arial, sans-serif;
+    }
+    .main_menu_top a.ada_access_menu {padding: 4px 6px;}
+  
+
+.header-right-menu-modal {
+    border-radius: 0;
+    box-shadow: none;
+    left: inherit;
+    right: 0px;
+    z-index: 999;
+    width: 550px;
+    padding: 20px 5px;
+    background-color: #efefef;
+}
+
+.header-shopping-cart {
+    display: inline-block;
+}
+
+    .header-shopping-cart .btn-primary {
+        border-radius: 3px !important;
+        text-transform: inherit !important;
+        margin: 0 10px 0 0px;
+        font-size: 12px;
+    }
+
+a.cart_icon_top_blue {
+    background: #26374A;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 18px;
+    height: 32px;
+    line-height: 22px;
+    text-align: center;
+    width: 32px;
+    position: relative;
+    margin: 0 0px 0 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+    a.cart_icon_top_blue i {
+        position: relative;
+        top: 5px;
+    }
+
+.header-user-name {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.all_data_right .header-user-name {
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 0px;
+    display: inline-block;
+    font-size: 12px;
+}
+
     </style>
 
     <!-- End US eDirect styles -->
