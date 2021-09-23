@@ -283,8 +283,8 @@
     <!-- ----------------------------- -->
     <!-- ----------------------------- -->
     <main property="mainContentOfPage" resource="#wb-main" class="container" typeof="WebPageElement">
-        <h2>Choose a random location</h2>
-        <button onclick="randomizeSites()"  class="btn btn-primary">Randomize</button>
+        <h2>Generate a random location</h2>
+        
         <div class="well">
             <div class="row">
                 <div class="col-sm-3">
@@ -312,12 +312,14 @@
                     </ul>
                 </div>
             </div>
-
+            <button onclick="randomizeSites()"  class="btn btn-primary">Randomize</button>
 
 
         </div>
         <script>
-
+            $(document).ready(function () { 
+                randomizeSites()
+            });
 
 
             let locations = [
