@@ -317,12 +317,7 @@
 
         </div>
         <script>
-            $(document).ready(function () { 
-                randomizeSites()
-            });
-
-
-            let locations = [
+                        let locations = [
                 { "path": "https://www.pc.gc.ca/en/pn-np/nl/mealy", "name": "Akami-Uapishkᵁ-KakKasuak-Mealy Mountains National Park Reserve", "type": "pn-np" },
                 { "path": "https://www.pc.gc.ca/en/pn-np/nt/aulavik", "name": "Aulavik National Park", "type": "pn-np" },
                 { "path": "https://www.pc.gc.ca/en/pn-np/nu/auyuittuq", "name": "Auyuittuq National Park", "type": "pn-np" },
@@ -550,6 +545,9 @@
             //         <ul id="randomPN"> 
             //         <ul id="randomNHS"> 
             //         <ul id="randomNMCA">
+                $(document).ready(function () { 
+                randomizeSites()
+            });
 
             function randomizeSites() {
                 let outputAll = document.getElementById('randomAll');
