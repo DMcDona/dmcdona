@@ -540,14 +540,11 @@
 
             ];
 
-            // 
-            //          <ul id="randomAll">
-            //         <ul id="randomPN"> 
-            //         <ul id="randomNHS"> 
-            //         <ul id="randomNMCA">
-                $(document).ready(function () { 
-                randomizeSites()
-            });
+           
+                window.onload = function {
+                    randomizeSites();
+                }
+                
 
             function randomizeSites() {
                 let outputAll = document.getElementById('randomAll');
