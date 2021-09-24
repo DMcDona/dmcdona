@@ -583,11 +583,11 @@
                 let aText = document.createTextNode("English");
                 a.appendChild(aText);
                 a.href = outputAllLocation.path;
-                outputAll.appendChild(outputLi).appendChild(a);
+                outputAllul.appendChild(outputLi).appendChild(a);
                 
                 aText = document.createTextNode("French");
                 a.href = outputAllLocation.path.replace("/en/","/fr")
-                outputAll.appendChild(outputLi).appendChild(a);
+                outputAllul.appendChild(outputLi).appendChild(a);
                 // PN
                 let parkLocations = locations.filter(location => location.type === "pn-np");
                  outputLocation = parkLocations[Math.floor(Math.random() * parkLocations.length)];
@@ -610,7 +610,7 @@
                 a.appendChild(aText);
                 a.href = outputLocation.path;
                 outputLiNHS.appendChild(a);
-                outputNHS.appendChild(outputLiNHS);
+                outputNHSul.appendChild(outputLiNHS);
 
                 // NMCA
                 let nmcaLocations = locations.filter(location => location.type === "amnc-nmca");
@@ -621,7 +621,7 @@
                 a.appendChild(aText);
                 a.href = outputLocation.path;
                 outputLinmca.appendChild(a);
-                outputNMCA.appendChild(outputLinmca);
+                outputNMCAul.appendChild(outputLinmca);
 
             }
 
