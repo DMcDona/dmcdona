@@ -289,7 +289,7 @@
         <section class="alert alert-danger">
             <h3>In development</h3>
             <p>Testing French support. This may be broken for a little bit this morning. </p>
-            <p>V 1.1</p>
+            <p>V 1.2</p>
         </section>
         <div class="well">
             <div class="row">
@@ -297,32 +297,32 @@
                     <h3>Random site</h3>
                     <p id="randomAllp"></p>
                     <ul>
-                        <li><a href="" id="randomAllEn">English</li>
-                        <li><a href="" id="randomAllFr">Français</li>
+                        <li><a href="" id="randomAllEn">English</a></li>
+                        <li><a href="" id="randomAllFr">Français</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h3>Random NP</h3>
                     <p id="randomNPp"></p>
                     <ul>
-                        <li><a href="" id="randomNPEn">English</li>
-                        <li><a href="" id="randomNPFr">Français</li>
+                        <li><a href="" id="randomNPEn">English</a></li>
+                        <li><a href="" id="randomNPFr">Français</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h3>Random NHS</h3>
                     <p id="randomNHSp"></p>
                     <ul>
-                        <li><a href="" id="randomNHSEn">English</li>
-                        <li><a href="" id="randomNHSFr">Français</li>
+                        <li><a href="" id="randomNHSEn">English</a></li>
+                        <li><a href="" id="randomNHSFr">Français</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h3>Random NMCA</h3>
                     <p id="randomNMCAp"></p>
                     <ul>
-                        <li><a href="" id="randomNMCAEn">English</li>
-                        <li><a href="" id="randomNMCAFr">Français</li>
+                        <li><a href="" id="randomNMCAEn">English</a></li>
+                        <li><a href="" id="randomNMCAFr">Français</a></li>
                     </ul>
                 </div>
             </div>
@@ -603,17 +603,17 @@
 
 
                 let outputLocation = locations[Math.floor(Math.random() * locations.length)];
-                outputAll.innerHTML = outputAllLocation.name;
+                outputAll.innerHTML = outputLocation.name;
                 outputAllEn.href = outputLocation.path;
-                outputAllFr.href = outputAllLocation.path.replace("/en/", "/fr")
+                outputAllFr.href = outputLocation.path.replace("/en/", "/fr")
 
 
                 // PN
                 outputLocations = locations.filter(location => location.type === "pn-np");
                 outputLocation = outputLocations[Math.floor(Math.random() * outputLocations.length)];
-                outputNP.innerHTML = outputAllLocation.name;
+                outputNP.innerHTML = outputLocation.name;
                 outputNPEn.href = outputLocation.path;
-                outputNPFr.href = outputAllLocation.path.replace("/en/", "/fr")
+                outputNPFr.href = outputLocation.path.replace("/en/", "/fr")
 
 
                 // NHS
@@ -621,18 +621,18 @@
 
                 outputLocations = locations.filter(location => location.type === "lhn-nhs");
                 outputLocation = outputLocations[Math.floor(Math.random() * outputLocations.length)];
-                outputNHS.innerHTML = outputAllLocation.name;
+                outputNHS.innerHTML = outputLocation.name;
                 outputNHSEn.href = outputLocation.path;
-                outputNHSFr.href = outputAllLocation.path.replace("/en/", "/fr")
+                outputNHSFr.href = outputLocation.path.replace("/en/", "/fr")
 
 
                 // NMCA
 
                 outputLocations = locations.filter(location => location.type === "amnc-nmca");
                 outputLocation = outputLocations[Math.floor(Math.random() * outputLocations.length)];
-                outputNMCA.innerHTML = outputAllLocation.name;
+                outputNMCA.innerHTML = outputLocation.name;
                 outputNMCAEn.href = outputLocation.path;
-                outputNMCAFr.href = outputAllLocation.path.replace("/en/", "/fr")
+                outputNMCAFr.href = outputLocation.path.replace("/en/", "/fr")
 
 
             }
