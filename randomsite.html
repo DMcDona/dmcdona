@@ -289,13 +289,14 @@
         <section class="alert alert-danger">
             <h3>In development</h3>
             <p>Testing French support. This may be broken for a little bit this morning. </p>
+            <p>V 1.1</p>
         </section>
         <div class="well">
             <div class="row">
                 <div class="col-sm-3">
                     <h3>Random site</h3>
                     <p id="randomAllp"></p>
-                    <ul id="randomAllul">
+                    <ul>
                         <li><a href="" id="randomAllEn">English</li>
                         <li><a href="" id="randomAllFr">Français</li>
                     </ul>
@@ -303,7 +304,7 @@
                 <div class="col-sm-3">
                     <h3>Random NP</h3>
                     <p id="randomNPp"></p>
-                    <ul id="randomNPul">
+                    <ul>
                         <li><a href="" id="randomNPEn">English</li>
                         <li><a href="" id="randomNPFr">Français</li>
                     </ul>
@@ -311,7 +312,7 @@
                 <div class="col-sm-3">
                     <h3>Random NHS</h3>
                     <p id="randomNHSp"></p>
-                    <ul id="randomNHSul">
+                    <ul>
                         <li><a href="" id="randomNHSEn">English</li>
                         <li><a href="" id="randomNHSFr">Français</li>
                     </ul>
@@ -319,7 +320,7 @@
                 <div class="col-sm-3">
                     <h3>Random NMCA</h3>
                     <p id="randomNMCAp"></p>
-                    <ul id="randomNMCAul">
+                    <ul>
                         <li><a href="" id="randomNMCAEn">English</li>
                         <li><a href="" id="randomNMCAFr">Français</li>
                     </ul>
@@ -608,7 +609,7 @@
 
 
                 // PN
-                let outputLocations = locations.filter(location => location.type === "pn-np");
+                outputLocations = locations.filter(location => location.type === "pn-np");
                 outputLocation = outputLocations[Math.floor(Math.random() * outputLocations.length)];
                 outputNP.innerHTML = outputAllLocation.name;
                 outputNPEn.href = outputLocation.path;
@@ -618,7 +619,7 @@
                 // NHS
 
 
-                let outputLocations = locations.filter(location => location.type === "lhn-nhs");
+                outputLocations = locations.filter(location => location.type === "lhn-nhs");
                 outputLocation = outputLocations[Math.floor(Math.random() * outputLocations.length)];
                 outputNHS.innerHTML = outputAllLocation.name;
                 outputNHSEn.href = outputLocation.path;
@@ -627,7 +628,7 @@
 
                 // NMCA
 
-                let outputLocations = locations.filter(location => location.type === "amnc-nmca");
+                outputLocations = locations.filter(location => location.type === "amnc-nmca");
                 outputLocation = outputLocations[Math.floor(Math.random() * outputLocations.length)];
                 outputNMCA.innerHTML = outputAllLocation.name;
                 outputNMCAEn.href = outputLocation.path;
