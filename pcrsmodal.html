@@ -215,18 +215,19 @@
         .pc-h1-brass {
             border-bottom-color: #ecb731;
         }
-        .pcrsdoormat {
-                transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-                background-color: #fff;
-                margin-bottom: 60px;
-            }
 
-            .pcrsdoormat:hover {
-                transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-                
-            }
+        .pcrsdoormat {
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            background-color: #fff;
+            margin-bottom: 60px;
+        }
+
+        .pcrsdoormat:hover {
+            transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+        }
     </style> <!-- End custom CSS -->
     <!-- Start US eDirect styles -->
     <style>
@@ -257,7 +258,7 @@
     </style>
 </head>
 
-<body vocab="http://schema.org/" typeof="WebPage" resource="#wb-webpage" style="width: 99%;"> 
+<body vocab="http://schema.org/" typeof="WebPage" resource="#wb-webpage" style="width: 99%;">
     <!-- End treasury board content -->
     <!-- Start CDTS top-en -->
     <ul id="wb-tphp">
@@ -267,35 +268,37 @@
 
     <!-- Start US eDirect header -->
     <header>
-        <div class="row mrgn-bttm-md">
-            
-            <div class="col-sm-8 col-sm-offset-2">
-                <section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
-                    <h2 class="wb-inv">Language selection</h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="list-inline mrgn-bttm-0">
-                                <li>
-                                    <a lang="fr" href="/fr.html">
-                                        
+        <div class="container">
+            <div class="row mrgn-bttm-md">
+
+                <div class="col-sm-8 col-sm-offset-2">
+                    <section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
+                        <h2 class="wb-inv">Language selection</h2>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="list-inline mrgn-bttm-0">
+                                    <li>
+                                        <a lang="fr" href="/fr.html">
+
                                             <span class="hidden-xs">Français</span>
                                             <abbr title="Français" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase">fr</abbr>
-                                        
-                                        
-                                    </a>
-                                </li>
-                                
-                                
-                            </ul>
+
+
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
                         </div>
+                    </section>
+                    <div class="col-sm-3 mrgn-tp-md"><img src="https://user-images.githubusercontent.com/45856706/134706333-d7c28ce7-34ad-44cd-bc94-386b83b0cfee.png" alt="Parks Canada"></div>
+                    <!-- https://uatparkscanada.usedirect.com/Saturn/themes/ParksCanada/A_logo.png -->
+                    <div class="col-sm-4 pull-right mrgn-tp-md">
+                        <p>
+                            <button class="btn btn-primary">Login</button> <button class="btn btn-primary">Create account</button> <span class="fa-stack fa-2x" style="font-size:1.5em; margin-top: 3px" aria-hidden="true"><span class="fas fa-circle fa-stack-2x" style="color: #26374a;" aria-hidden="true"></span><span class="fas fa-shopping-cart fa-stack-1x fa-inverse" aria-hidden="true"></span></span>
+                        </p>
                     </div>
-                </section>
-                <div class="col-sm-3 mrgn-tp-md"><img src="https://user-images.githubusercontent.com/45856706/134706333-d7c28ce7-34ad-44cd-bc94-386b83b0cfee.png" alt="Parks Canada"></div>
-                <!-- https://uatparkscanada.usedirect.com/Saturn/themes/ParksCanada/A_logo.png -->
-                <div class="col-sm-4 pull-right mrgn-tp-md">
-                    <p>
-                        <button class="btn btn-primary">Login</button> <button class="btn btn-primary">Create account</button> <span class="fa-stack fa-2x" style="font-size:1.5em; margin-top: 3px" aria-hidden="true"><span class="fas fa-circle fa-stack-2x" style="color: #26374a;" aria-hidden="true"></span><span class="fas fa-shopping-cart fa-stack-1x fa-inverse" aria-hidden="true"></span></span>
-                    </p>
                 </div>
             </div>
         </div>
@@ -365,171 +368,172 @@
     <!-- Start main page content       -->
     <!-- ----------------------------- -->
     <!-- ----------------------------- -->
-    <main property="mainContentOfPage" resource="#wb-main" class="container" typeof="WebPageElement">
-        <div class="row">
-            <div class="col-sm-11">
-                <!--	 bg-hide-sm bg-hide-xs removed to keep image on mobile-->
-                <div class="row" style="background-color: #26374B;        ">
-                    <div class="col-xs-12">
-                        <div class="brdr-0 brdr-rds-0 text-white opct-90">
-                            <h1 property="name" id="wb-cont" class="pc-h1-brass" style="border-bottom-width: 3px;">Parks Canada reservation service</h1>
-                            <p>Your reservation awaits.</p><p>Check the <a class="text-white" href="#">latest reservation information</a>, including the reservation dates for each Parks Canada location.</p>
-                            <p>New to camping? Visit <a class="text-white" href="https://www.pc.gc.ca/en/voyage-travel/hebergement-accommodation/camping-101">Camping 101: What to know before staying the night</a></p>
-                            <!--opct-100 added-->
+    <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-11">
+                    <!--	 bg-hide-sm bg-hide-xs removed to keep image on mobile-->
+                    <div class="row" style="background-color: #26374B;        ">
+                        <div class="col-xs-12">
+                            <div class="brdr-0 brdr-rds-0 text-white opct-90">
+                                <h1 property="name" id="wb-cont" class="pc-h1-brass" style="border-bottom-width: 3px;">Parks Canada reservation service</h1>
+                                <p>Your reservation awaits.</p>
+                                <p>Check the <a class="text-white" href="#">latest reservation information</a>, including the reservation dates for each Parks Canada location.</p>
+                                <p>New to camping? Visit <a class="text-white" href="https://www.pc.gc.ca/en/voyage-travel/hebergement-accommodation/camping-101">Camping 101: What to know before staying the night</a></p>
+                                <!--opct-100 added-->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row mrgn-tp-lg">
+                <div class="col-md-5 col-sm-5 mrgn-bttm-sm text-center pcrsdoormat">
+                    <h2 class="mrgn-tp-sm"><a href="#">Frontcountry campgrounds</a> </h2> <a href="#"> <img src="https://user-images.githubusercontent.com/45856706/134590338-b91dcc43-81c8-4f87-9eed-3fbbbac71157.jpg" alt="" class="img-responsive mrgn-bttm-sm"> </a>
+                    <p><a class="wb-lbx lbx-modal" href="#frontcountry_modal"><span class="fas fa-question-circle" aria-hidden="true"></span> What is frontcountry camping?</a></p>
+                    <section id="frontcountry_modal" class="mfp-hide modal-dialog modal-content overlay-def">
+                        <header class="modal-header">
+                            <h2 class="modal-title mrgn-tp-sm">What is frontcountry camping?</h2>
+                        </header>
+                        <div class="modal-body">
+
+                            <p>Also known as "car camping", you can drive your vehicle right to the site.</p>
+                            <p>A great option for beginners. Frontcountry campgrounds usually include:</p>
+                            <ul>
+                                <li>washrooms with showers</li>
+                                <li>kitchen shelters</li>
+                                <li>electrical</li>
+                                <li>sewer and water hookups</li>
+                                <li>Wi-Fi access zones</li>
+                            </ul>
+
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-5 col-sm-5 mrgn-bttm-sm text-center col-sm-offset-1 pcrsdoormat">
+                    <h2 class="mrgn-tp-sm"><a href="#">Backcountry campgrounds</a></h2> <a href="#"> <img src="https://user-images.githubusercontent.com/45856706/134590332-278eb0fa-45e5-43a1-a150-94ddcb7911f4.jpg" alt="" class="img-responsive mrgn-bttm-sm"> </a>
+                    <p><a class="wb-lbx lbx-modal" href="#backcountry_modal"><span class="fas fa-question-circle" aria-hidden="true"></span> What is backcountry camping?</a></p>
+
+
+                    <section id="backcountry_modal" class="mfp-hide modal-dialog modal-content overlay-def">
+                        <header class="modal-header">
+                            <h2 class="modal-title mrgn-tp-sm">What is backcountry camping?</h2>
+                        </header>
+                        <div class="modal-body">
+
+                            <p>Most backcountry sites are not accessible by car, and you can expect to do some hiking, canoeing, or kayaking to get to them.</p>
+                            <p>Looking for more of a challenge? Try the ultimate outdoor adventure: you, your camping gear and the great outdoors. Your backcountry campsite might include:</p>
+                            <ul>
+                                <li>a tent pad</li>
+                                <li>picnic tables</li>
+                                <li>outhouses</li>
+                                <li>firewood</li>
+                                <li>a fire pit</li>
+                            </ul>
+
+                        </div>
+                    </section>
+                </div>
+            </div> <!-- Row 2 -->
+            <div class="row">
+                <div class="col-md-5 col-sm-5 mrgn-bttm-sm text-center pcrsdoormat">
+                    <h2 class="mrgn-tp-sm"><a href="#">Activities and services</a></h2> <a href="#"> <img src="https://user-images.githubusercontent.com/45856706/134590807-4b11be3d-4cfc-4b4a-ab52-a7dfbed0695b.jpg" alt="" class="img-responsive mrgn-bttm-sm"> </a>
+
+                    <p><a class="wb-lbx lbx-modal" href="#activ_modal"><span class="fas fa-question-circle" aria-hidden="true"></span> What activities are reservable?</a></p>
+
+                    <section id="activ_modal" class="mfp-hide modal-dialog modal-content overlay-def">
+                        <header class="modal-header">
+                            <h2 class="modal-title mrgn-tp-sm">What activities are reservable?</h2>
+                        </header>
+                        <div class="modal-body">
+                            <p>Parks Canada offers reservations for many popular activities.</p>
+                            <p>Reservable activities include:</p>
+                            <ul>
+                                <li>Shuttles</li>
+                                <li>Parking</li>
+                                <li>Guided hikes</li>
+                                <li>Georgian Bay Islands Ferry</li>
+                                <li>Lake O'Hara bus</li>
+
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-5 col-sm-5 mrgn-bttm-sm text-center col-sm-offset-1 pcrsdoormat">
+                    <h2 class="mrgn-tp-sm"><a href="#">Roofed accommodations</a></h2> <a href="#"> <img src="https://user-images.githubusercontent.com/45856706/134592779-23f315d3-1f33-4112-ba88-ff3d7c190438.jpg" alt="" class="img-responsive mrgn-bttm-sm"> </a>
+
+                    <p><a class="wb-lbx lbx-modal" href="#accom_modal"><span class="fas fa-question-circle" aria-hidden="true"></span> What are roofed accommodations?</a></p>
+
+                    <section id="accom_modal" class="mfp-hide modal-dialog modal-content overlay-def">
+                        <header class="modal-header">
+                            <h2 class="modal-title mrgn-tp-sm">What are roofed accommodations?</h2>
+                        </header>
+                        <div class="modal-body">
+                            <p>‘Roughing it’ not for you? These options are available in many places - no assembly required:</p>
+                            <ul>
+                                <li><strong>oTENTik</strong>: A cross between an A-frame cabin and a tent</li>
+                                <li><strong>Yurt</strong>: A circular hut</li>
+                                <li><strong>Cabin</strong>: A small rustic house-like shelter - these vary in size</li>
+                                <li><strong>Overnight mooring</strong>: Moor your boat overnight in a historic canal</li>
+
+                            </ul>
+                            <p>Looking for something more unique? Try these:</p>
+                            <ul>
+                                <li><strong>Ôasis</strong>: A teardrop-shaped ‘duplex’</li>
+                                <li><strong>MicrOcube</strong>: A one-room mini-cabin with a large picture window</li>
+                                <li><strong>Tipi</strong>: A cone-shaped canvas tent, traditionally used by Plains peoples</li>
+                                <li><strong>Historic stay</strong>: Sleep in a fort, a lodge, a period-style tent, a lockmasters’ or lightkeepers’ house or a period-style home</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
-        <div class="row mrgn-tp-lg">
-            <div class="col-md-5 col-sm-5 mrgn-bttm-sm text-center pcrsdoormat" >
-                <h2 class="mrgn-tp-sm"><a href="#">Frontcountry campgrounds</a> </h2> <a href="#"> <img src="https://user-images.githubusercontent.com/45856706/134590338-b91dcc43-81c8-4f87-9eed-3fbbbac71157.jpg" alt="" class="img-responsive mrgn-bttm-sm"> </a>
-                <p><a class="wb-lbx lbx-modal" href="#frontcountry_modal"><span class="fas fa-question-circle" aria-hidden="true"></span> What is frontcountry camping?</a></p>
-                <section id="frontcountry_modal" class="mfp-hide modal-dialog modal-content overlay-def">
-                    <header class="modal-header">
-                        <h2 class="modal-title mrgn-tp-sm">What is frontcountry camping?</h2>
-                    </header>
-                    <div class="modal-body">
-                      
-                                <p>Also known as "car camping", you can drive your vehicle right to the site.</p>
-                                <p>A great option for beginners. Frontcountry campgrounds usually include:</p>
-                                <ul>
-                                    <li>washrooms with showers</li>
-                                    <li>kitchen shelters</li>
-                                    <li>electrical</li>
-                                    <li>sewer and water hookups</li>
-                                    <li>Wi-Fi access zones</li>
-                                </ul>
-
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-5 col-sm-5 mrgn-bttm-sm text-center col-sm-offset-1 pcrsdoormat" >
-                <h2 class="mrgn-tp-sm"><a href="#">Backcountry campgrounds</a></h2> <a href="#"> <img src="https://user-images.githubusercontent.com/45856706/134590332-278eb0fa-45e5-43a1-a150-94ddcb7911f4.jpg" alt="" class="img-responsive mrgn-bttm-sm"> </a>
-                <p><a class="wb-lbx lbx-modal" href="#backcountry_modal"><span class="fas fa-question-circle" aria-hidden="true"></span> What is backcountry camping?</a></p>
-
-
-                <section id="backcountry_modal" class="mfp-hide modal-dialog modal-content overlay-def">
-                    <header class="modal-header">
-                        <h2 class="modal-title mrgn-tp-sm">What is backcountry camping?</h2>
-                    </header>
-                    <div class="modal-body">
-                        
-                                <p>Most backcountry sites are not accessible by car, and you can expect to do some hiking, canoeing, or kayaking to get to them.</p>
-                                <p>Looking for more of a challenge? Try the ultimate outdoor adventure: you, your camping gear and the great outdoors. Your backcountry campsite might include:</p>
-                                <ul>
-                                    <li>a tent pad</li>
-                                    <li>picnic tables</li>
-                                    <li>outhouses</li>
-                                    <li>firewood</li>
-                                    <li>a fire pit</li>
-                                </ul>
-                           
-                    </div>
-                </section>
-            </div>
-        </div> <!-- Row 2 -->
-        <div class="row">
-            <div class="col-md-5 col-sm-5 mrgn-bttm-sm text-center pcrsdoormat" >
-                <h2 class="mrgn-tp-sm"><a href="#">Activities and services</a></h2> <a href="#"> <img src="https://user-images.githubusercontent.com/45856706/134590807-4b11be3d-4cfc-4b4a-ab52-a7dfbed0695b.jpg" alt="" class="img-responsive mrgn-bttm-sm"> </a>
-                
-                <p><a class="wb-lbx lbx-modal" href="#activ_modal"><span class="fas fa-question-circle" aria-hidden="true"></span> What activities are reservable?</a></p>
-
-                <section id="activ_modal" class="mfp-hide modal-dialog modal-content overlay-def">
-                    <header class="modal-header">
-                        <h2 class="modal-title mrgn-tp-sm">What activities are reservable?</h2>
-                    </header>
-                    <div class="modal-body">
-                        <p>Parks Canada offers reservations for many popular activities.</p>
-                        <p>Reservable activities include:</p>
-                        <ul>
-                            <li>Shuttles</li>
-                            <li>Parking</li>
-                            <li>Guided hikes</li>
-                            <li>Georgian Bay Islands Ferry</li>
-                            <li>Lake O'Hara bus</li>
-
-                        </ul>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-5 col-sm-5 mrgn-bttm-sm text-center col-sm-offset-1 pcrsdoormat" >
-                <h2 class="mrgn-tp-sm"><a href="#">Roofed accommodations</a></h2> <a href="#"> <img src="https://user-images.githubusercontent.com/45856706/134592779-23f315d3-1f33-4112-ba88-ff3d7c190438.jpg" alt="" class="img-responsive mrgn-bttm-sm"> </a>
-
-                <p><a class="wb-lbx lbx-modal" href="#accom_modal"><span class="fas fa-question-circle" aria-hidden="true"></span> What are roofed accommodations?</a></p>
-
-                <section id="accom_modal" class="mfp-hide modal-dialog modal-content overlay-def">
-                    <header class="modal-header">
-                        <h2 class="modal-title mrgn-tp-sm">What are roofed accommodations?</h2>
-                    </header>
-                    <div class="modal-body">
-                        <p>‘Roughing it’ not for you? These options are available in many places - no assembly required:</p>
-                        <ul>
-                            <li><strong>oTENTik</strong>: A cross between an A-frame cabin and a tent</li>
-                            <li><strong>Yurt</strong>: A circular hut</li>
-                            <li><strong>Cabin</strong>: A small rustic house-like shelter - these vary in size</li>
-                            <li><strong>Overnight mooring</strong>: Moor your boat overnight in a historic canal</li>
-    
-                        </ul>
-                        <p>Looking for something more unique? Try these:</p>
-                        <ul>
-                            <li><strong>Ôasis</strong>: A teardrop-shaped ‘duplex’</li>
-                            <li><strong>MicrOcube</strong>: A one-room mini-cabin with a large picture window</li>
-                            <li><strong>Tipi</strong>: A cone-shaped canvas tent, traditionally used by Plains peoples</li>
-                            <li><strong>Historic stay</strong>: Sleep in a fort, a lodge, a period-style tent, a lockmasters’ or lightkeepers’ house or a period-style home</li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-        </div>
-
     </main> <!-- End main page content         -->
     <!-- Start custom script -->
     <script>        $(document).ready(function () { $("#siteSearch").find("input").removeAttr("required"); let tempString = ("#siteSearch").find("input"); console.log(tempString); });</script> <!-- End custom script -->
     <!-- Start US eDirect footer -->
     <footer id="MainFooter" role="contentinfo">
-        <div>
-            <div class="container">
-                <div class="">
-                    <div class="" style="text-align: center;">
-                        <img alt="Parks Canada Logo" class="footer_img_new" title="Parks Canada" src="https://uatparkscanada.usedirect.com/saturn/themes/parkscanada/footerlogo.png">
-                        <!--  <img class="fot-arow" title="down arrow" src="https://uatparkscanada.usedirect.com/saturn/themes/parkscanada/logo.jpg" alt="aerrow" />    -->
-                        <div class="bot-links pagelinks">
-                            <a href="https://uatparkscanada.usedirect.com/Saturn/Default.aspx">Home </a> |
-                            <a href="https://uatparkscanada.usedirect.com/Saturn/Facilities/SearchViewUnitAvailabity.aspx" id="SearchViewLink" onclick="switchchange();">Camping and Parks Canada accommodations</a>
-                            <!--  <a href="Activities/ProgramsAndTours.aspx">ACTIVITIES </a> | -->
-                            <!--<a href="Giftcards/Giftcardsale.aspx">GIFT CARDS</a> -->
-                            <!--      <a href="Giftcards/Giftcardsale.aspx">GIFT CARDS</a> -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12" style="text-align: center;">
+                    <img alt="Parks Canada Logo" class="footer_img_new" title="Parks Canada" src="https://uatparkscanada.usedirect.com/saturn/themes/parkscanada/footerlogo.png">
+                    <!--  <img class="fot-arow" title="down arrow" src="https://uatparkscanada.usedirect.com/saturn/themes/parkscanada/logo.jpg" alt="aerrow" />    -->
+                    <div class="bot-links pagelinks">
+                        <a href="https://uatparkscanada.usedirect.com/Saturn/Default.aspx">Home </a> |
+                        <a href="https://uatparkscanada.usedirect.com/Saturn/Facilities/SearchViewUnitAvailabity.aspx" id="SearchViewLink" onclick="switchchange();">Camping and Parks Canada accommodations</a>
+                        <!--  <a href="Activities/ProgramsAndTours.aspx">ACTIVITIES </a> | -->
+                        <!--<a href="Giftcards/Giftcardsale.aspx">GIFT CARDS</a> -->
+                        <!--      <a href="Giftcards/Giftcardsale.aspx">GIFT CARDS</a> -->
 
 
-                        </div>
-                        <div class="bot-links">
-                            <!-- <a onclick="javascript:var rules=window.open('', 'rules','width=600, height=400, scrollbars=1, resizable=1'); return false;" target="_blank"  href="javascript:void(0);">-->
-                            <a href="https://reservation.pc.gc.ca/ResPolicies.aspx" target="_blank"> <strong>Park rules </strong> </a> |
-                            <a href="https://uatparkscanada.usedirect.com/Saturn/ContactUs.aspx"> <strong>Contact us </strong> </a> |
-                            <a href="https://reservation.pc.gc.ca/PrivacyPolicies.aspx" target="_blank"> <strong>Privacy policy </strong> </a>|
-                            <a href="https://parkscanada.gc.ca" target="_blank"> <strong>Parks Canada Agency </strong> </a>
-                        </div>
-                        <br>
-                        <div class="">
-                            <span id="Label1" style="color: white; font-size: 12px;">Contact us: 1-877-737-3783, 8 am to 6 pm Pacific Time (PT) </span>
-                        
-                        </div>
-                        <div>
-                            <div class="copyrights">Copyright © 2021&nbsp; Parks Canada</div>
-                        </div>
                     </div>
-                    <div class="col-sm-3"><p>Version: 1.2</p></div>
+                    <div class="bot-links">
+                        <!-- <a onclick="javascript:var rules=window.open('', 'rules','width=600, height=400, scrollbars=1, resizable=1'); return false;" target="_blank"  href="javascript:void(0);">-->
+                        <a href="https://reservation.pc.gc.ca/ResPolicies.aspx" target="_blank"> <strong>Park rules </strong> </a> |
+                        <a href="https://uatparkscanada.usedirect.com/Saturn/ContactUs.aspx"> <strong>Contact us </strong> </a> |
+                        <a href="https://reservation.pc.gc.ca/PrivacyPolicies.aspx" target="_blank"> <strong>Privacy policy </strong> </a>|
+                        <a href="https://parkscanada.gc.ca" target="_blank"> <strong>Parks Canada Agency </strong> </a>
+                    </div>
+                    <br>
+                    <div class="">
+                        <span id="Label1" style="color: white; font-size: 12px;">Contact us: 1-877-737-3783, 8 am to 6 pm Pacific Time (PT) </span>
 
-
-
-                    <div class="includeFooter">&nbsp;</div>
+                    </div>
+                    <div>
+                        <div class="copyrights">Copyright © 2021&nbsp; Parks Canada</div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <p>Version: 1.3</p>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-8 col-sm-offset-2">
-            <div style="background-color:white;padding:52px;width:100%;float:left;">
-                <div class="footer_right_img"><img src="https://uatparkscanada.usedirect.com/saturn/themes/parkscanada/logo.png" alt="Parks Canada Logo" style="float:right">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div style="background-color:white;padding:52px;width:100%;float:left;">
+                        <div class="footer_right_img"><img src="https://uatparkscanada.usedirect.com/saturn/themes/parkscanada/logo.png" alt="Parks Canada Logo" style="float:right">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
