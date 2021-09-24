@@ -283,50 +283,54 @@
     <!-- ----------------------------- -->
     <!-- ----------------------------- -->
     <main property="mainContentOfPage" resource="#wb-main" class="container" typeof="WebPageElement">
-        
+
 
         <h2>Generate a random location</h2>
         <section class="alert alert-danger">
-  <h3>In development</h3>
-  <p>Just testing adding French support. This may be broken for a little bit this morning. </p>
-</section>
+            <h3>In development</h3>
+            <p>Just testing adding French support. This may be broken for a little bit this morning. </p>
+        </section>
         <div class="well">
             <div class="row">
                 <div class="col-sm-3">
                     <h3>Random site</h3>
                     <p id="randomAllp"></p>
                     <ul id="randomAllul">
-
+                        <li><a href="" id="randomAllEn">English</li>
+                        <li><a href="" id="randomAllFr">Français</li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h3>Random NP</h3>
                     <p id="randomNPp"></p>
                     <ul id="randomNPul">
-
+                        <li><a href="" id="randomNPEn">English</li>
+                        <li><a href="" id="randomNPFr">Français</li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h3>Random NHS</h3>
                     <p id="randomNHSp"></p>
                     <ul id="randomNHSul">
-
+                        <li><a href="" id="randomNHSEn">English</li>
+                        <li><a href="" id="randomNHSFr">Français</li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h3>Random NMCA</h3>
                     <p id="randomNMCAp"></p>
                     <ul id="randomNMCAul">
-
+                        <li><a href="" id="randomNMCAEn">English</li>
+                        <li><a href="" id="randomNMCAFr">Français</li>
                     </ul>
                 </div>
             </div>
-            <button onclick="randomizeSites()"  class="btn btn-primary">Randomize</button>
+            <button onclick="randomizeSites()" class="btn btn-primary">Randomize</button>
 
 
         </div>
         <script>
-                        let locations = [
+            let locations = [
                 { "path": "https://www.pc.gc.ca/en/pn-np/nl/mealy", "name": "Akami-Uapishkᵁ-KakKasuak-Mealy Mountains National Park Reserve", "type": "pn-np" },
                 { "path": "https://www.pc.gc.ca/en/pn-np/nt/aulavik", "name": "Aulavik National Park", "type": "pn-np" },
                 { "path": "https://www.pc.gc.ca/en/pn-np/nu/auyuittuq", "name": "Auyuittuq National Park", "type": "pn-np" },
@@ -549,95 +553,86 @@
 
             ];
 
-           
-                window.onload = function() {
-                    randomizeSites();
-                };
-                
+
+            window.onload = function () {
+                randomizeSites();
+            };
+
+
 
             function randomizeSites() {
-                let outputAllp = document.getElementById('randomAllp');
-                let outputAllul = document.getElementById('randomAllul');
-                let outputPNp = document.getElementById('randomNPp');
-                let outputPNul = document.getElementById('randomNPul');
-                let outputNHSp = document.getElementById('randomNHSp');
-                let outputNHSul = document.getElementById('randomNHSul');
-                let outputNMCAp = document.getElementById('randomNMCAp');
-                let outputNMCAul = document.getElementById('randomNMCAul');
 
-                outputAllp.innerHTML = "";
-                outputAllul.innerHTML = "";
-                outputPNp.innerHTML = "";
-                outputPNul.innerHTML = "";
-                outputNHSp.innerHTML = "";
-                outputNHSul.innerHTML = "";
-                outputNMCAp.innerHTML = "";
-                outputNMCAul.innerHTML = "";
+                let outputAll = document.getElementById('randomAllp');
+                let outputAllEn = document.getElementById("randomAllEn");
+                let outputAllFr = document.getElementById("randomAllFr");
+
+                let outputNP = document.getElementById('randomNPp');
+                let outputNPEn = document.getElementById("randomNPEn");
+                let outputNPFr = document.getElementById("randomNPFr");
+
+                let outputNHS = document.getElementById('randomNHSp');
+                let outputNHSEn = document.getElementById("randomNHSEn");
+                let outputNHSFr = document.getElementById("randomNHSFr");
+
+                let outputNMCA = document.getElementById('randomNMCAp');
+                let outputNMCAEn = document.getElementById("randomNMCAEn");
+                let outputNMCAFr = document.getElementById("randomNMCAFr");
+
+
+
+                outputAll.innerHTML = "";
+                outputAllEn.href = "";
+                outputAllFr.href = "";
+
+                outputNP.innerHTML = "";
+                outputNPEn.href = "";
+                outputNPFr.href = "";
+
+                outputNHS.innerHTML = "";
+                outputNHSEn.href = "";
+                outputNHSFr.href = "";
+
+                outputNMCA.innerHTML = "";
+                outputNMCAEn.href = "";
+                outputNMCAFr.href = "";
+
 
                 // All
-                
-                let outputAllLocation = locations[Math.floor(Math.random() * locations.length)];
-                let outputLi = document.createElement('li');
-                let a = document.createElement('a');
-                outputAllp.innerHTML = outputAllLocation.name;
-                let aText = document.createTextNode("English");
-                a.appendChild(aText);
-                a.href = outputAllLocation.path;
-                outputAllul.appendChild(outputLi).appendChild(a);
-                
-                aText = document.createTextNode("French");
-                a.href = outputAllLocation.path.replace("/en/","/fr")
-                outputAllul.appendChild(outputLi).appendChild(a);
+
+
+
+                let outputLocation = locations[Math.floor(Math.random() * locations.length)];
+                outputAll.innerHTML = outputAllLocation.name;
+                outputAllEn.href = outputLocation.path;
+                outputAllFr.href = outputAllLocation.path.replace("/en/", "/fr")
+
+
                 // PN
-                let parkLocations = locations.filter(location => location.type === "pn-np");
-                 outputLocation = parkLocations[Math.floor(Math.random() * parkLocations.length)];
-                outputLiPN = document.createElement('li');
-                a = document.createElement('a');
-                aText = document.createTextNode(outputLocation.name);
-                a.appendChild(aText);
-                a.href = outputLocation.path;
-                outputLiPN.appendChild(a);
-                outputPN.appendChild(outputLiPN);
+                let outputLocations = locations.filter(location => location.type === "pn-np");
+                outputLocation = outputLocations[Math.floor(Math.random() * outputLocations.length)];
+                outputNP.innerHTML = outputAllLocation.name;
+                outputNPEn.href = outputLocation.path;
+                outputNPFr.href = outputAllLocation.path.replace("/en/", "/fr")
 
 
                 // NHS
-                
-                let nhsLocations = locations.filter(location => location.type === "lhn-nhs");
-                 outputLocation = nhsLocations[Math.floor(Math.random() * parkLocations.length)];
-                let outputLiNHS = document.createElement('li');
-                a = document.createElement('a');
-                aText = document.createTextNode(outputLocation.name);
-                a.appendChild(aText);
-                a.href = outputLocation.path;
-                outputLiNHS.appendChild(a);
-                outputNHSul.appendChild(outputLiNHS);
+
+
+                let outputLocations = locations.filter(location => location.type === "lhn-nhs");
+                outputLocation = outputLocations[Math.floor(Math.random() * outputLocations.length)];
+                outputNHS.innerHTML = outputAllLocation.name;
+                outputNHSEn.href = outputLocation.path;
+                outputNHSFr.href = outputAllLocation.path.replace("/en/", "/fr")
+
 
                 // NMCA
-                let nmcaLocations = locations.filter(location => location.type === "amnc-nmca");
-                 outputLocation = nmcaLocations[Math.floor(Math.random() * nmcaLocations.length)];
-                let outputLinmca = document.createElement('li');
-                a = document.createElement('a');
-                aText = document.createTextNode(outputLocation.name);
-                a.appendChild(aText);
-                a.href = outputLocation.path;
-                outputLinmca.appendChild(a);
-                outputNMCAul.appendChild(outputLinmca);
 
-            }
+                let outputLocations = locations.filter(location => location.type === "amnc-nmca");
+                outputLocation = outputLocations[Math.floor(Math.random() * outputLocations.length)];
+                outputNMCA.innerHTML = outputAllLocation.name;
+                outputNMCAEn.href = outputLocation.path;
+                outputNMCAFr.href = outputAllLocation.path.replace("/en/", "/fr")
 
-            function randomAll() {
-                let outputP = document.getElementById("output");
-                outputP.innerHTML = ""
-                let outputLocation = locations[Math.floor(Math.random() * locations.length)];
-
-                let a = document.createElement('a');
-
-                let aText = document.createTextNode(outputLocation.name);
-
-                a.appendChild(aText);
-                a.href = outputLocation.path;
-
-                outputP.appendChild(a);
 
             }
 
