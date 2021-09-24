@@ -283,31 +283,40 @@
     <!-- ----------------------------- -->
     <!-- ----------------------------- -->
     <main property="mainContentOfPage" resource="#wb-main" class="container" typeof="WebPageElement">
-        <h2>Generate a random location</h2>
         
+
+        <h2>Generate a random location</h2>
+        <section class="alert alert-danger">
+  <h3>In development</h3>
+  <p>Just testing adding French support. This may be broken for a little bit this morning. </p>
+</section>
         <div class="well">
             <div class="row">
                 <div class="col-sm-3">
                     <h3>Random site</h3>
-                    <ul id="randomAll">
+                    <p id="randomAllp"></p>
+                    <ul id="randomAllul">
 
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h3>Random NP</h3>
-                    <ul id="randomPN">
+                    <p id="randomNPp"></p>
+                    <ul id="randomNPul">
 
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h3>Random NHS</h3>
-                    <ul id="randomNHS">
+                    <p id="randomNHSp"></p>
+                    <ul id="randomNHSul">
 
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h3>Random NMCA</h3>
-                    <ul id="randomNMCA">
+                    <p id="randomNMCAp"></p>
+                    <ul id="randomNMCAul">
 
                     </ul>
                 </div>
@@ -547,27 +556,38 @@
                 
 
             function randomizeSites() {
-                let outputAll = document.getElementById('randomAll');
-                let outputPN = document.getElementById('randomPN');
-                let outputNHS = document.getElementById('randomNHS');
-                let outputNMCA = document.getElementById('randomNMCA');
+                let outputAllp = document.getElementById('randomAllp');
+                let outputAllul = document.getElementById('randomAllul');
+                let outputPNp = document.getElementById('randomNPp');
+                let outputPNul = document.getElementById('randomNPul');
+                let outputNHSp = document.getElementById('randomNHSp');
+                let outputNHSul = document.getElementById('randomNHSul');
+                let outputNMCAp = document.getElementById('randomNMCAp');
+                let outputNMCAul = document.getElementById('randomNMCAul');
 
-                outputAll.innerHTML = "";
-                outputPN.innerHTML = "";
-                outputNHS.innerHTML = "";
-                outputNMCA.innerHTML = "";
+                outputAllp.innerHTML = "";
+                outputAllul.innerHTML = "";
+                outputPNp.innerHTML = "";
+                outputPNul.innerHTML = "";
+                outputNHSp.innerHTML = "";
+                outputNHSul.innerHTML = "";
+                outputNMCAp.innerHTML = "";
+                outputNMCAul.innerHTML = "";
 
                 // All
                 
                 let outputAllLocation = locations[Math.floor(Math.random() * locations.length)];
                 let outputLi = document.createElement('li');
                 let a = document.createElement('a');
-                let aText = document.createTextNode(outputAllLocation.name);
+                outputAllp.innerHTML = outputAllLocation.name;
+                let aText = document.createTextNode("English");
                 a.appendChild(aText);
                 a.href = outputAllLocation.path;
-
                 outputAll.appendChild(outputLi).appendChild(a);
-
+                
+                aText = document.createTextNode("French");
+                a.href = outputAllLocation.path.replace("/en/","/fr")
+                outputAll.appendChild(outputLi).appendChild(a);
                 // PN
                 let parkLocations = locations.filter(location => location.type === "pn-np");
                  outputLocation = parkLocations[Math.floor(Math.random() * parkLocations.length)];
