@@ -26,10 +26,10 @@
                                     <!--have you reviewed Pyramid Island info online checkbox-->
                                     <fieldset class="legend-brdr-bttm">
                                         <div class="checkbox-inline">
-                                            <!-- > -->
+                                            <!-- *** Move required class, added <strong>  -->
                                             <label for="ReviewedOnlineInfo" class="required"><strong>Before submitting a reservation request, please confirm that you have reviewed the information for the <a href="#Pyramid">Pyramid Island ceremony site</a></strong> <strong class="required">(required)</strong></label>
                                             <input id="ReviewedOnlineInfo" type="checkbox" required="required" value="Yes" />Yes
-<!-- < -->
+
                                         </div>
                                     </fieldset>
                                     <br />
