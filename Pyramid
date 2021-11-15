@@ -1,0 +1,300 @@
+
+<section class="panel panel-primary">
+    <header class="panel-heading">
+        <h5 class="panel-title"><span aria-hidden="true" class="fas fa-calendar-alt" title="Date"></span> Reservations</h5>
+    </header>
+    <div class="panel-body">
+        <p><strong>Reservations for 2022 will be available starting November 16, 2021 at 8 am MST</strong></p>
+        <ul>
+            <li>Use the link provided below to submit your reservation request. We also ask that you refrain from sending multiple requests for the same event to avoid any confusion. </li>
+        </ul>
+        <div class="accordion">
+            <!-- Accordion section 1 -->
+            <details class="acc-group">
+                <summary class="wb-toggle tgl-tab" data-toggle="{'parent': '.accordion', 'group': '.acc-group'}">Pyramid Island reservation request</summary>
+                <div class="tgl-panel">
+                    <!-- Section 1's content -->
+                    <!--Pyramid Island reservation request-->
+                    <section class="panel panel-primary">
+                        <header class="panel-heading">Pyramid Island reservation request
+                        </header>
+                        <div class="panel-body">
+                            <p>Use this form to submit a reservation request. A member of our team will reach out to you for further details and to confirm the reservation.</p>
+                            <hr />
+                            <div class="wb-frmvld">
+                                <form id="FormRouter" method="post" enctype="multipart/form-data" action="/apps/formrouter/api/FormRouter">
+                                    <!--have you reviewed Pyramid Island info online checkbox-->
+                                    <fieldset class="legend-brdr-bttm">
+                                        <div class="checkbox-inline">
+                                            <!-- > -->
+                                            <label for="ReviewedOnlineInfo" class="required"><strong>Before submitting a reservation request, please confirm that you have reviewed the information for the <a href="#Pyramid">Pyramid Island ceremony site</a></strong> <strong class="required">(required)</strong></label>
+                                            <input id="ReviewedOnlineInfo" type="checkbox" required="required" value="Yes" />Yes
+<!-- < -->
+                                        </div>
+                                    </fieldset>
+                                    <br />
+                                    <fieldset class="legend-brdr-bttm">
+                                        <legend>Contact information</legend>
+                                        <div class="form-group">
+                                            <!-- *** Move class, add (required) -->
+                                            <label for="name" class="required"><span class="field-name">Name </span> <strong class="required">(required)</strong></label>
+                                            <br />
+                                            <input type="text" id="name" name="name" required="required" style="width:100%;" placeholder="Jo Doe" />
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group"><!-- *** Move class, add (required) -->
+                                                    <label for="email" class="required"><span class="field-name required">Email </span></label>
+                                                    <br />
+                                                    <input type="email" id="email" name="email" required="required" style="width:100%;" placeholder="jo.doe@email.com" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group"><!-- *** Move class, add (required) -->
+                                                    <label for="phone" class="required"><span class="field-name ">Phone <strong class="required">(required)</strong></span></label>
+                                                    <br />
+                                                    <input type="tel" id="phone" name="phone" style="width:100%;" required="required" data-rule-phoneus="false" placeholder="(123) 456-7890" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="alternatecontact"><span class="field-name required">Alternate contact name</span></label>
+                                                    <br />
+                                                    <input type="AlternateName" id="Alternate Name" name="AlternateName" style="width:100%;" placeholder="Jane Doe" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="AlternatePhone"><span>Alternate phone number</span></label>
+                                                    <br />
+                                                    <input type="tel" id="Alternate Phone" name="Alternatephone" style="width:100%;" data-rule-phoneus="false" placeholder="(234) 456-7890" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <!--event details-->
+                                    <br />
+                                    <fieldset class="legend-brdr-bttm">
+                                        <legend>Event</legend>
+                                        <div class="form-group"><!-- *** Move class, add (required) -->
+                                            <label for="eventType" class="required"><span class="field-event">Type of event <strong class="required">(required)</strong></span></label>
+                                            <br />
+                                            <input type="text" id="eventType" name="eventType" required="required" style="width:100%;" />
+                                        </div>
+                                        <br />
+                                        <!--Number of guests expected-->
+                                        <!--<fieldset class="legend-brdr-bttm">-->
+                                        <div class="form-group">
+                                            <!--  *** Added label, removed p and added br, added required -->
+                                            <label for="GuestsNumber" class="required" >
+                                            <strong>Number of guests expected <strong class="required">(required)</strong></strong>
+                                            <br><strong>Note:</strong> Maximum group size at this location is 50 people.</label>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <select class="form-control" id="GuestsNumber" required="required" name="GuestsNumber">
+                                                        <option>Choose a number</option>
+                                                        <option value="Pyramid Island - 1 to 5">1 - 5</option>
+                                                        <option value="Pyramid Island - 6 to 10">6 - 10</option>
+                                                        <option value="Pyramid Island - 7 to 15">7 - 15</option>
+                                                        <option value="Pyramid Island - 16 to 20">16 - 20</option>
+                                                        <option value="Pyramid Island - 21 to 25">21 - 25</option>
+                                                        <option value="Pyramid Island - 26 to 30">26 - 30</option>
+                                                        <option value="Pyramid Island - 31 to 35">31 - 35</option>
+                                                        <option value="Pyramid Island - 36 to 40">36 - 40</option>
+                                                        <option value="Pyramid Island - 41 to 45">41 - 45</option>
+                                                        <option value="Pyramid Island - 45 to 50">45 - 50</option>
+                                                    </select>
+                                                </div>
+                                                <!--end number of people-->
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <!--event details end-->
+                                    <br />
+                                    <fieldset class="legend-brdr-bttm">
+                                        <legend>Schedule</legend>
+                                        <div class="form-group">
+                                            <label class="required" for="reserveDate"><span class="field-name">Desired date</span> <span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
+                                            <br />
+                                            <!-- *** Added value temporarily. Will be replaced with Javascript down the road -->
+                                            <input type="date" id="reserveDate" name="reserveDate" min="2022-05-01" value="2022-05-01" max="2022-10-10" required="required" />
+                                        </div>
+                                        <br />
+                                        <!--</fieldset>
+            <fieldset class="legend-brdr-bttm">-->
+                                        <!--<legend>Time</legend>-->
+                                        <div class="form-group">
+                                            
+                                            <p><strong>Note:</strong> You may book up to a maximum of 3 time slots.</p>
+                                            <p><strong>Desired time(s)</strong></p>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <label for="reservationTime1" class="required">Time slot 1 <strong class="required">(required)</strong></label>
+                                                    <select class="form-control" id="reservationTime1" required="required" name="reservationTime1">
+                                                        <option>Choose a time</option>
+                                                        <option value="Pyramid Island - 10:30 am to 11:30 am">10:30 am to 11:30 am ($49)</option>
+                                                        <option value="Pyramid Island - 11:30 am to 12:30 pm">11:30 am to 12:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 12:30 pm to 1:30 pm">12:30 pm to 1:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 1:30 pm to 2:30 pm">1:30 pm to 2:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 2:30 pm to 3:30 pm">2:30 pm to 3:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 3:30 pm to 4:30 pm">3:30 pm to 4:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 4:30 pm to 5:30 pm">4:30 pm to 5:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 5:30 pm to 6:30 pm">5:30 pm to 6:30 pm ($49)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label for="reservationTime2">Time slot 2 - Optional</label>
+                                                    <select class="form-control" id="reservationTime2" name="reservationTime2">
+                                                        <option>Choose a time</option>
+                                                        <option value="Pyramid Island - 10:30 am to 11:30 am">10:30 am to 11:30 am ($49)</option>
+                                                        <option value="Pyramid Island - 11:30 am to 12:30 pm">11:30 am to 12:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 12:30 pm to 1:30 pm">12:30 pm to 1:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 1:30 pm to 2:30 pm">1:30 pm to 2:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 2:30 pm to 3:30 pm">2:30 pm to 3:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 3:30 pm to 4:30 pm">3:30 pm to 4:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 4:30 pm to 5:30 pm">4:30 pm to 5:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 5:30 pm to 6:30 pm">5:30 pm to 6:30 pm ($49)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label for="reservationTime3">Time slot 3 - Optional</label>
+                                                    <select class="form-control" id="reservationTime3" name="reservationTime3">
+                                                        <option>Choose a time</option>
+                                                        <option value="Pyramid Island - 10:30 am to 11:30 am">10:30 am to 11:30 am ($49)</option>
+                                                        <option value="Pyramid Island - 11:30 am to 12:30 pm">11:30 am to 12:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 12:30 pm to 1:30 pm">12:30 pm to 1:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 1:30 pm to 2:30 pm">1:30 pm to 2:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 2:30 pm to 3:30 pm">2:30 pm to 3:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 3:30 pm to 4:30 pm">3:30 pm to 4:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 4:30 pm to 5:30 pm">4:30 pm to 5:30 pm ($49)</option>
+                                                        <option value="Pyramid Island - 5:30 pm to 6:30 pm">5:30 pm to 6:30 pm ($49)</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <hr />
+
+
+                                                <!-- *** This is all new, but copy-pasteable -->
+                                            <div class="col-sm-12">
+                                                <fieldset class="chkbxrdio-grp">
+                                                    <legend class="required"><span class="field-name">Is your date flexible? <strong class="required">(required)</strong></legend>
+                                                    <div class="radio">
+                                                        <label for="flexibleDateCheckYes"><input id="flexibleDateCheckYes" type="radio" value="Yes" name="flexibleDate" data-rule-required="true" />Yes</label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label for="flexibleDateCheckNo"><input id="flexibleDateCheckNo" type="radio" value="No" name="flexibleDate" />No</label>
+                                                    </div>
+                                                    <div id="flexibleDateDetails" class="hidden">
+                                                        <label for="flexibleDateDetail"><span class="field-name required">Please explain </span></label>
+                                                        <br />
+                                                        <input type="text" id="flexibleDateDetail" name="flexibleDateDetail" style="width:100%;" />
+                                                    </div>
+                                                </fieldset>
+
+                                                <fieldset class="chkbxrdio-grp">
+                                                    <legend class="required"><span class="field-name">Is your time flexible? <strong class="required">(required)</strong></legend>
+                                                    <div class="radio">
+                                                        <label for="flexibleTimeCheckYes"><input id="flexibleTimeCheckYes" type="radio" value="Yes" name="flexibleTime" data-rule-required="true" />Yes</label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label for="flexibleTimeCheckNo"><input id="flexibleTimeCheckNo" type="radio" value="No" name="flexibleTime" />No</label>
+                                                    </div>
+                                                    <div id="flexibleTimeDetails" class="hidden">
+                                                        <label for="flexibleTimeDetail"><span class="field-name required">Please explain </span></label>
+                                                        <br />
+                                                        <input type="text" id="flexibleTimeDetail" name="flexibleTimeDetail" style="width:100%;" />
+                                                    </div>
+                                                </fieldset>
+
+                                                <fieldset class="chkbxrdio-grp">
+                                                    <legend class="required"><span class="field-name">Is your venue flexible? (I.e., would you consider <a href="~/link.aspx?_id=7B0CE8936753422D8D93E055346E9DFA&amp;_z=z">Athabasca Day Use</a>&nbsp;as an alternative venue?) <strong class="required">(required)</strong></legend>
+                                                    <div class="radio">
+                                                        <label for="flexibleVenueCheckYes"><input id="flexibleVenueCheckYes" class="flexibleVenue" type="radio" value="Yes" name="flexibleVenue"  data-rule-required="true" data-toggle='{"selector": "#flexibleVenueDetails", "type": "on", "stateOn": ".visible"}'/>Yes</label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label for="flexibleVenueCheckNo"><input id="flexibleVenueCheckNo" class="flexibleVenue" type="radio" value="No" name="flexibleVenue" data-toggle='{"selector": "#flexibleVenueDetails", "type": "off", "stateOff": ".hidden"}'>/>No</label>
+                                                    </div>
+                                                    
+                                                    <div id="flexibleVenueDetails" class="hidden">
+                                                        <label for="flexibleVenueDetail"><span class="field-name required">Please explain </span></label>
+                                                        <br />
+                                                        <input type="text" id="flexibleVenueDetail" name="flexibleVenueDetail" style="width:100%;" />
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <!--  *** added mrgn-tp-sm for a bit of spacing -->
+                                    <div class="alert alert-info mrgn-tp-sm">
+                                        <p>Requests will be processed in the order that they are received. It may take up to 5 business days for you to hear back while we process your request. Thank you for your patience!</p>
+                                    </div>
+                                    <fieldset class="legend-brdr-bttm">
+                                        <!--these fields are required for formrouter-->
+                                        <input type="hidden" name="Subject" id="Subject" value="Wedding and rental reservation request" />
+                                        <input type="hidden" name="emailFrom" id="emailFrom" value="jasperweb@pc.gc.ca" />
+                                        <input type="hidden" name="emailTo" id="emailTo" value="jasperweb@pc.gc.ca" />
+                                        <input type="hidden" name="submitSuccess" id="submitSuccess" value="https://pc.gc.ca/en/agence-agency/succes-success" />
+                                        <input type="hidden" name="submitFail" id="submitFail" value="https://pc.gc.ca/en/agence-agency/erreur-error" />
+                                        <input value="Reset" class="btn btn-default" type="reset" />
+                                        <input value="Submit" class="btn btn-primary" type="submit" />
+                                    </fieldset>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </details>
+        </div>
+    </div>
+    <footer class="panel-footer">Note: All groups must follow any <a href="https://www.alberta.ca/restrictions-on-gatherings.aspx">Alberta&rsquo;s provincial restriction or guidelines</a> in place at the time of the event.</footer>
+</section>
+<section class="panel panel-default">
+    <header class="panel-heading">
+        <h4 class="panel-title"><a name="Pyramid"></a>Venue details</h4>
+    </header>
+    <div class="panel-body">
+        <h4 class="mrgn-tp-0">Location and parking: </h4>
+        <p>Pyramid Island is located 7.5 km from the Jasper townsite. There are only 5 parking stalls at the trailhead and a shared parking lot about 100m to the entry point. This is a public area that can be very busy during the peak season months (June &ndash; September). Shuttle services for larger groups are highly recommended. </p>
+        <h4>Amenities:</h4>
+        <ul>
+            <li>Bench seating for 50 people </li>
+            <li>Million dollar view! </li>
+        </ul>
+        <h4>Group size: </h4>
+        <p>Maximum number of people for this site is 50.</p>
+        <!--<p>A maximum group size of 30 people has been set for this site due to the requirements for physical distancing and the size of the venue. This new maximum will be in place while the requirement for physical distancing is in place.</p>
+    <p>All gatherings must follow the requirement for physical distancing and <a href="https://www.alberta.ca/restrictions-on-gatherings.aspx">Alberta&rsquo;s provincial restrictions on gatherings</a> in place at the time of their event.</p>-->
+        <h4>Time slots and fees: </h4>
+        <div class="alert alert-info">
+            <p>A non-refundable administration fee of $13.50 applies to every reservation. </p>
+        </div>
+        <ul>
+            <li>10:30 am - 11:30&nbsp;am ($49)</li>
+            <li>11:30 am &ndash; 12:30&nbsp;pm ($49)</li>
+            <li>12:30 pm &ndash; 1:30&nbsp;pm ($49)</li>
+            <li>1:30 pm&nbsp;&ndash; 2:30 pm ($49)</li>
+            <li>2:30 pm&nbsp;&ndash; 3:30&nbsp;pm ($49)</li>
+            <li>3:30 pm&nbsp;&ndash; 4:30 pm ($49)</li>
+            <li>4:30 pm&nbsp;&ndash; 5:30 pm ($49)</li>
+            <li>5:30 pm&nbsp;&ndash; 6:30 pm ($49)</li>
+        </ul>
+        <p><strong>Note:</strong> You may book up to a maximum of 3 time slots.</p>
+        <h4>General information: </h4>
+        <ul>
+            <li>This is a day use only area (no overnight stay or camping) </li>
+            <li>Length of booking will need to include time for set-up and clean-up </li>
+            <li>The general area remains publicly accessible and users are not to block off parking spots or trail access </li>
+            <li>Users are responsible for area clean-up following their event </li>
+            <li>Fires are not permitted at this location </li>
+            <li>This day use area should only be used for the ceremony (and pictures). Extended stays or receptions are not appropriate.</li>
+            <li>This is a public area, so the consumption of liquor is prohibited.</li>
+        </ul>
+        <p>For any additional information, please contact: <span aria-hidden="true" class="fas fa-envelope"></span> <a href="mailto:groupesjasper-jaspergroups@pc.gc.ca">jaspergroups@pc.gc.ca</a></p>
+    </div>
+</section>
+<p>To picture yourself and your group at this spectacular event location, take a look through our photo album.</p>
+
