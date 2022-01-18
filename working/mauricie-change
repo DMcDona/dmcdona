@@ -1,0 +1,78 @@
+<script src="-/media/9652EA08C7AD49A88EB29D196818E1B4.ashx"></script>
+
+
+<section class="alert alert-warning">
+    <p>In order to limit the spread of COVID-19 and reduce the risk to the Canadian population, visitors and employees, Parks Canada may close certain areas or reduce their capacity to limit the number of visitors. <strong>In the event of very heavy traffic, park admission may be temporarily limited to holders of accommodation</strong>.<br />
+        <a href="~/link.aspx?_id=7D43E46601EF40BFB9EB899E32CF8058&amp;_z=z">Consult the measures in place</a>.
+    </p>
+</section>
+
+
+<h3>Entrance status</h3>
+<table class="wb-tables table table-striped table-hover" data-paging='false' data-info='false' data-searching='false'>
+    <caption>Entrance status</caption>
+    <thead>
+        <tr>
+            <th data-visible='false'>Rating</th>
+            <th>Entrance</th>
+            <th>Status</th>
+            <th>Comment</th>
+            <th data-visible='false'>Links</th>
+        </tr>
+    </thead>
+    <tbody data-tims-h3="Entrance status" data-tims-link="~/link.aspx?_id=CFA7FAE83AE54C27A1ED4DDA240B603E&_z=z">
+        <tr>
+            <td></td>
+            <td><a href="~/link.aspx?_id=CFA7FAE83AE54C27A1ED4DDA240B603E&_z=z">See the Entrance status</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h3>Parking lots status</h3>
+<table class="wb-tables table table-striped table-hover" data-paging='false' data-info='false' data-searching='false'>
+    <caption>Parking lots status</caption>
+    <thead>
+        <tr>
+
+            <th data-visible='false'>Rating</th>
+            <th>Parking lot</th>
+            <th>Status</th>
+            <th>Comment</th>
+            <th data-visible='false'>Links</th>
+        </tr>
+    </thead>
+    <tbody data-tims-h3="Parking lots status" data-tims-link="~/link.aspx?_id=CFA7FAE83AE54C27A1ED4DDA240B603E&_z=z">
+        <tr>
+            <td></td>
+            <td><a href="~/link.aspx?_id=CFA7FAE83AE54C27A1ED4DDA240B603E&_z=z">See the Parking lots status</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<h4>Useful links</h4>
+<nav role="navigation" class="gc-toc">
+    <div class="row hidden-sm hidden-xs">
+        <div class="btn-group btn-group-justified">
+            <a class="btn btn-default btn-block" role="button" href="~/link.aspx?_id=2A4B4C35FA9C417486C94D954B0ADC25&amp;_z=z">Important bulletin</a>
+            <a class="btn btn-default btn-block" role="button" href="~/link.aspx?_id=7D43E46601EF40BFB9EB899E32CF8058&amp;_z=z">COVID-19</a>
+            <a class="btn btn-default btn-block" role="button" href="~/link.aspx?_id=71BD661CD2AA4E2D932FB25C7677EA4A&amp;_z=z">Domestic animals</a>
+            <a class="btn btn-default btn-block" role="button" href="~/link.aspx?_id=CFA7FAE83AE54C27A1ED4DDA240B603E&amp;_z=z">Trail conditions</a>
+        </div>
+</div>
+
+        <div class="row hidden-md hidden-lg">
+            <a class="btn btn-default btn-block" role="button" href="~/link.aspx?_id=2A4B4C35FA9C417486C94D954B0ADC25&amp;_z=z">Important bulletin</a>
+            <a class="btn btn-default btn-block" role="button" href="~/link.aspx?_id=7D43E46601EF40BFB9EB899E32CF8058&amp;_z=z">COVID-19</a>
+            <a class="btn btn-default btn-block" role="button" href="~/link.aspx?_id=71BD661CD2AA4E2D932FB25C7677EA4A&amp;_z=z">Domestic animals</a>
+            <a class="btn btn-default btn-block" role="button" href="~/link.aspx?_id=CFA7FAE83AE54C27A1ED4DDA240B603E&amp;_z=z">Trail conditions</a>
+        </div>
+</nav>
