@@ -1,5 +1,14 @@
 <script src="-/media/9652EA08C7AD49A88EB29D196818E1B4.ashx"></script>
-
+<style>
+    .hidden-col-1 th:nth-of-type(1),.hidden-col-1 td:nth-of-type(1) {
+        display: none!important;
+        visibility: hidden!important;
+    }
+    .hidden-col-5 th:nth-of-type(5),.hidden-col-1 td:nth-of-type(5) {
+        display: none!important;
+        visibility: hidden!important;
+    }
+</style>
 
 <section class="alert alert-warning">
     <p>In order to limit the spread of COVID-19 and reduce the risk to the Canadian population, visitors and employees, Parks Canada may close certain areas or reduce their capacity to limit the number of visitors. <strong>In the event of very heavy traffic, park admission may be temporarily limited to holders of accommodation</strong>.<br />
@@ -9,15 +18,15 @@
 
 
 <h3>Entrance status</h3>
-<table class="wb-tables table table-striped table-hover" data-paging='false' data-info='false' data-searching='false'>
+<table class="wb-tables table table-striped table-hover hidden-col-1 hidden-col-5" data-paging='false' data-info='false' data-searching='false'>
     <caption>Entrance status</caption>
     <thead>
         <tr>
-            <th data-visible='false'>Rating</th>
+            <th>Rating</th>
             <th>Entrance</th>
             <th>Status</th>
             <th>Comment</th>
-            <th data-visible='false'>Links</th>
+            <th>Links</th>
         </tr>
     </thead>
     <tbody data-tims-h3="Entrance status" data-tims-link="~/link.aspx?_id=CFA7FAE83AE54C27A1ED4DDA240B603E&_z=z">
@@ -33,16 +42,16 @@
 
 
 <h3>Parking lots status</h3>
-<table class="wb-tables table table-striped table-hover" data-paging='false' data-info='false' data-searching='false'>
+<table class="wb-tables table table-striped table-hover hidden-col-1 hidden-col-5" data-paging='false' data-info='false' data-searching='false'>
     <caption>Parking lots status</caption>
     <thead>
         <tr>
 
-            <th data-visible='false'>Rating</th>
+            <th>Rating</th>
             <th>Parking lot</th>
             <th>Status</th>
             <th>Comment</th>
-            <th data-visible='false'>Links</th>
+            <th>Links</th>
         </tr>
     </thead>
     <tbody data-tims-h3="Parking lots status" data-tims-link="~/link.aspx?_id=CFA7FAE83AE54C27A1ED4DDA240B603E&_z=z">
