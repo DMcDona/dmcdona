@@ -1,0 +1,63 @@
+<script src="-/media/9652EA08C7AD49A88EB29D196818E1B4.ashx"></script>
+<style>
+    .hidden-col-1 th:nth-of-type(1),.hidden-col-1 td:nth-of-type(1) {
+        display: none!important;
+        visibility: hidden!important;
+    }
+    .hidden-col-5 th:nth-of-type(5),.hidden-col-1 td:nth-of-type(5) {
+        display: none!important;
+        visibility: hidden!important;
+    }
+</style>
+
+
+
+<h3>Entrance status</h3>
+<table class="wb-tables table table-striped table-hover hidden-col-1 hidden-col-5" data-paging='false' data-info='false' data-searching='false'>
+    <caption>Entrance status</caption>
+    <thead>
+        <tr>
+            <th>Rating</th>
+            <th>Entrance</th>
+            <th>Status</th>
+            <th>Comment</th>
+            <th>Links</th>
+        </tr>
+    </thead>
+    <tbody data-tims-h3="Around town" data-tims-link="~/link.aspx?_id=CADBBE6345C24548A15D869343003BF7&amp;_z=z">
+        <tr>
+            <td></td>
+            <td><a href="~/link.aspx?_id=CADBBE6345C24548A15D869343003BF7&amp;_z=z">See the current status</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h3>Whatever heading you want</h3>
+<table class="wb-tables table table-striped table-hover hidden-col-1 hidden-col-5" data-paging='false' data-info='false' data-searching='false'>
+    <caption>Whatever table caption you want</caption>
+    <thead>
+        <tr>
+
+            <th>Heading 1</th>
+            <th>Heading 2</th>
+            <th>Heading 3</th>
+            <th>Heading 4</th>
+            <th>Heading 5</th>
+            
+            
+        </tr>
+    </thead>
+    <tbody data-tims-h3="Winter recreation - designated ski trails" data-tims-link="~/link.aspx?_id=31FD045BF2B246FD9B136F61D25A717A&_z=z ">
+        <tr>
+            <td></td>
+            <td><a href="~/link.aspx?_id=31FD045BF2B246FD9B136F61D25A717A&_z=z">See the current status</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
