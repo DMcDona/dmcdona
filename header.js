@@ -213,4 +213,5 @@ let headHTML = `
 
 function inputHead() {
 document.getElementById("head2").innerHTML += headHTML;
+
 }
