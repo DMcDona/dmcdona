@@ -212,5 +212,5 @@ let headHTML = `
 
 
 function inputHead() {
-document.getElementById("head2").append(headHTML);
+document.getElementById("head2").innerHTML += headHTML;
 }
