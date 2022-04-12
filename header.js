@@ -1,6 +1,9 @@
+
+
+let headHTML = `  
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
-    <title>Alberta reservation dates - Parks Canada</title>
+    
     <meta content="width=device-width,initial-scale=1" name="viewport" />
     <link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
     <link rel="canonical" href="" />
@@ -205,3 +208,9 @@
         }
     </style>
     <!-- End provisional CSS for institutional page-->
+`
+
+
+function inputHead() {
+document.getElementById("head2").append(headHTML);
+}
