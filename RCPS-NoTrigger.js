@@ -1,15 +1,4 @@
 
-    // Check for the various File API support.
-    if (window.File && window.FileReader && window.FileList && window.Blob) {
-        // Great success! All the File APIs are supported.
-        //alert('Browser support file uploads')
-    } else {
-        // What to do at this point
-        alert('The file upload is not fully supported in this browser.');
-    }
-
-    // make sure everything that uses jQuery is wrapped in this block
-
     $(function () {
 
         // add validation rule to count new lines as \r\n (CRLF) because that is how the server reads the textarea values
