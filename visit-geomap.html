@@ -9,73 +9,69 @@
         </header>
         <div class="panel-body">
             <div class="row mrgn-tp-md mrgn-bttm-lg">
-                <div class="col-md-12">
+                <div class="col-md-8">
 
                     <!-- GeomapStart -->
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div id="location_map" class="wb-geomap wb-init wb-geomap-inited" data-wb-geomap="{...}">
+                    <div id="location_map" class="wb-geomap wb-init wb-geomap-inited" data-wb-geomap="{...}">
 
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <!-- Insert Map Start (mandatory) -->
-                                        <div class="wb-geomap-map">
-                                            ....
-                                        </div>
-                                        <!-- Insert Map End -->
-                                    </div>
-
-                                    <!-- Insert Legend Start (optional) -->
-                                    <!-- Insert Legend End -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Insert Map Start (mandatory) -->
+                                <div class="wb-geomap-map">
+                                    ....
                                 </div>
-
-                                <a href="https://maps.google.com/maps/dir//Jasper+National+Park,+Jasper,+AB" target="_blank">Directions</a>
-
-                                <!-- Insert Layer Data Start (mandatory) -->
-                                <div class="row hidden">
-                                    <section>
-                                        <div class="wb-geomap-layers col-md-12" id="geomap-layers-location_map">
-                                        ...
-                                        </div>
-                                    </section>
-                                </div>
-                                <!-- Insert Layer Data End -->
+                                <!-- Insert Map End -->
                             </div>
+
+                            <!-- Insert Legend Start (optional) -->
+                            <!-- Insert Legend End -->
                         </div>
+
+                        <a href="https://maps.google.com/maps/dir//Jasper+National+Park,+Jasper,+AB" target="_blank">Directions</a>
+
+                        <!-- Insert Layer Data Start (mandatory) -->
+                        <div class="row hidden">
+                            <section>
+                                <div class="wb-geomap-layers col-md-12" id="geomap-layers-location_map">
+                                    ...
+                                </div>
+                            </section>
+                        </div>
+                        <!-- Insert Layer Data End -->
                     </div>
                 </div>
                 <!-- GeomapEnd -->
 
+                <div class="col-md-4">
+                    <h3 class="mrgn-tp-0">Location</h3>
+                    <p class="park1-content">
+                    </p>
+                    <p>PO Box 10<br>
+                        Jasper, AB &nbsp;T0E 1E0</p>
+                    <p></p>
+                    <p>
+                        <strong>Phone</strong><br>
+                        <span class="park1-content">780-852-6176</span>
+                    </p>
+                    <p>
+                        <strong>Email</strong><br>
+                        <a href="mailto:jasperinfo@pc.gc.ca"><span class="park1-content">jasperinfo@pc.gc.ca</span></a>
+                    </p>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h3 class="mrgn-tp-0">Location</h3>
-                <p class="park1-content">
-                </p>
-                <p>PO Box 10<br>
-                    Jasper, AB &nbsp;T0E 1E0</p>
-                <p></p>
-                <p>
-                    <strong>Phone</strong><br>
-                    <span class="park1-content">780-852-6176</span>
-                </p>
-                <p>
-                    <strong>Email</strong><br>
-                    <a href="mailto:jasperinfo@pc.gc.ca"><span class="park1-content">jasperinfo@pc.gc.ca</span></a>
-                </p>
+
+            <h3>Directions</h3>
+            <div class="park1-content">
+                <p><a href="/pn-np/ab/jasper/visit/rendre-gethere">How to get here</a></p>
+                <p> Jasper National Park is situated in Alberta, 370 km (192 mi) west of Edmonton, 404 km (256 mi) northwest of Calgary and 805 km (500 mi) northeast of Vancouver. Stretching 232 km between Lake Louise and the town of Jasper, the Icefields Parkway (93 North) travels through the heart of the Canadian Rockies. </p>
+                <p><strong>For the most up-to-date road information:</strong></p>
+                <ul>
+                    <li>Check <a href="https://511.alberta.ca/">www.511.alberta.ca</a>&nbsp;or dial 511 (in Alberta only)</li>
+                    <li>Check <a href="http://www.drivebc.ca/">www.drivebc.ca</a>&nbsp;or dial 1-800-550-4997</li>
+                </ul>
             </div>
-        </div>
-        <h3>Directions</h3>
-        <div class="park1-content">
-            <p><a href="/pn-np/ab/jasper/visit/rendre-gethere">How to get here</a></p>
-            <p> Jasper National Park is situated in Alberta, 370 km (192 mi) west of Edmonton, 404 km (256 mi) northwest of Calgary and 805 km (500 mi) northeast of Vancouver. Stretching 232 km between Lake Louise and the town of Jasper, the Icefields Parkway (93 North) travels through the heart of the Canadian Rockies. </p>
-            <p><strong>For the most up-to-date road information:</strong></p>
-            <ul>
-                <li>Check <a href="https://511.alberta.ca/">www.511.alberta.ca</a>&nbsp;or dial 511 (in Alberta only)</li>
-                <li>Check <a href="http://www.drivebc.ca/">www.drivebc.ca</a>&nbsp;or dial 1-800-550-4997</li>
-            </ul>
         </div>
     </div>
-
     <script>
         $(document).on("wb-ready.wb-geomap", "#location_map", function (event, map) {
             // Get the map to use in zoomFeature function
